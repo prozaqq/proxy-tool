@@ -4,7 +4,7 @@ This multi-threaded proxy tool will quickly scrape proxies and check them agains
 Working proxies will be saved into a new file which is named by the current date for an easy daily proxy scraping .
 
 ```
-usage : proxy-tool.py
+usage : proxy_tool.py
 ```
 Additional flags :
 ```
