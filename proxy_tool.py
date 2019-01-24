@@ -1,12 +1,10 @@
 import requests
 import re
 import data
-import time
 import sys
 import os
 import argparse
 from bs4 import BeautifulSoup
-from multiprocessing import Pool
 from multiprocessing.dummy import Pool as ThreadPool
 
 # Scraper
