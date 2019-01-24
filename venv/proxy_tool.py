@@ -77,10 +77,10 @@ def hits():
 
 def check_args(args=None):
     parser = argparse.ArgumentParser(description='A script to quickly get alive HTTPS proxies')
-    parser.add_argument('-u', '--url', type=str, help='url to check proxy against', required=False, default='https://www.google.com')
-    parser.add_argument('-m', '--max', type=int, help='maximum proxies to scrape', required=False, default=800)
-    parser.add_argument('-t', '--timeout', type=int, help='set proxy timeout limit', required=False, default=8)
-    parser.add_argument('-st', '--set-threads', type=int, help='set number of threads to run', required=False, default=30)
+    parser.add_argument('-u', '--url', type=str, help='url to check proxy against', default='https://www.google.com')
+    parser.add_argument('-m', '--max', type=int, help='maximum proxies to scrape', default=800)
+    parser.add_argument('-t', '--timeout', type=int, help='set proxy timeout limit', default=8)
+    parser.add_argument('-st', '--set-threads', type=int, help='set number of threads to run', default=30)
 
 
     results = parser.parse_args(args)
